@@ -5,22 +5,18 @@
     max-width: 100%;
   }
   
-  body {
-    background: #cf5ea4;
-  }
-  
   .cardpostion {
     padding: 3vh;
   }
   .textstyleheader {
-    color: #c33764;
+    color: #000000;
   }
   .buttonstyle {
     padding: 10px;
-    background: #c33764;
+    background: #064f52;
     border: 0px;
     border-radius: 5px;
-    width: 30vh;
+    width: 50%;
     text-align: left;
     color: white;
   }

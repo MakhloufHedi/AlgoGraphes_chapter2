@@ -16,14 +16,8 @@ class QCM extends Component{
             "rSelected": "",
             "setRSelected": "",           
         };
-        this.onChange = this.onChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        // this.redirect=this.redirect.bind(this);
     }
 
-    onChange(e) {
-        this.setState({ [e.target.name]: e.target.value });
-    }
     render(){
         
         return(
@@ -32,45 +26,45 @@ class QCM extends Component{
         <Card className="cardpostion mcqstyle">
           <CardBody>
             <CardTitle className="textstyleheader">
-              <h2>Q1. What is your Name?</h2>
+              <h2>Q1. Un graphe symétrique est :</h2>
+              <br/>
             </CardTitle>
-
-            <Row>
-              <Col>
-                <Button
-                
-                  
+              <Row>
+                <Button                
                   className="buttonstyle"
                 >
-                  1. Anjil
+                  1. Un graphe dans lequel il n'y a pas de sommets isolés.
                 </Button>
-              </Col>
-              <Col style={{ paddingTop: "5px" }}>
+              </Row>
+              <br/>
+              <Row style={{ paddingTop: "5px" }}>
                 <Button
                   
                   className="buttonstyle"
                 >
-                  2. Anjil
+                  2. Un graphe dans lequel il y a au moins un arc entre deux sommets.
                 </Button>
-              </Col>
-              <Col style={{ paddingTop: "5px" }}>
+              </Row>
+              <br/>
+              <Row style={{ paddingTop: "5px" }}>
                 <Button
                   
                   className="buttonstyle"
                 >
-                  3. Anjil
+                  3.  Un graphe dans lequel si l'arc (i,j) existe alors l'arc (j,i) existe aussi.
                 </Button>
-              </Col>
-              <Col style={{ paddingTop: "5px" }}>
+              </Row>
+              <br/>
+              <Row style={{ paddingTop: "5px" }}>
                 <Button
                   
                   className="buttonstyle"
                 >
-                  4. Anjil
+                  4. Un graphe dans lequel soit l'arc (i,j) existe soit l'arc (j,i).
                 </Button>
-              </Col>
-            </Row>
-            <p className="buttonstyle">You Selected: </p>
+              </Row>
+              <br/>
+            {/* <p className="buttonstyle">You Selected: </p> */}
           </CardBody>
         </Card>
       </div>
