@@ -8,6 +8,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Test from './Test';
 import QCM from './Components/Chapters/Chapter1/Qcm.js';
 import Concept from './Components/Chapters/Chapter1/concept';
+import Scoreboard from './Components/Scoreboard/Scoreboard';
+import {Table} from 'reactstrap'
 function App() {
   return (
     // <Router>
@@ -17,9 +19,12 @@ function App() {
     //     {/* <Route path="/menu" component={Menu} /> */}
     //   </Routes>
     // </Router>
-    //  <Login />
+    <Login />
     // <QCM />
-    <Concept />
+    // <Concept />
+    // <Scoreboard />
+
+
   );
 }
 
