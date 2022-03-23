@@ -1,136 +1,68 @@
 import React, { Component } from 'react'
-import {Container, Row, Col,Card} from 'reactstrap'
+import { Container, Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap'
 
 class Concept extends Component {
 
 
-    render(){
-        return(
-            <Card>
-        <Container>
+  render() {
+    return (
+      <div className="App" >
+
+        <Card body inverse color="primary"  style={{ position: "center", width: "1200px"  }}>
+          <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman"  }}>Title</CardTitle>
+          <Container>
             <Row>
-              <Col className="bg-light border">
-                Notre concept
+              <Col
+                xs="8"
+              >
+                <CardText>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
+                  elit cursus, pellentesque dolor sed, fringilla augue. Donec bibendum
+                  nibh et auctor eleifend. Vestibulum ante ipsum primis in faucibus orci
+                  luctus et ultrices posuere cubilia curae; Mauris ultrices justo quis
+                  sapien faucibus ultricies.
+                </CardText>
+              </Col>
+              <Col
+                className="bg-light border"
+                xs="4"
+              >
+                <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
+
               </Col>
             </Row>
-            <Row>
-              <Col className="bg-light border">
-                .col
-              </Col>
-              <Col className="bg-light border">
-                .col
-              </Col>
-              <Col className="bg-light border">
-                .col
-              </Col>
-              <Col className="bg-light border">
-                .col
-              </Col>
-            </Row>
+
+
             <Row>
               <Col
-                className="bg-light border"
-                xs="3"
-              >
-                .col-3
-              </Col>
-              <Col
-                className="bg-light border"
-                xs="auto"
-              >
-                .col-auto - variable width content
-              </Col>
-              <Col
-                className="bg-light border"
-                xs="3"
-              >
-                .col-3
-              </Col>
-            </Row>
-            <Row>
-              <Col
-                className="bg-light border"
-                xs="6"
-              >
-                .col-6
-              </Col>
-              <Col
-                className="bg-light border"
-                xs="6"
-              >
-                .col-6
-              </Col>
-            </Row>
-            <Row>
-              <Col
-                className="bg-light border"
                 sm="4"
                 xs="6"
               >
-                .col-6 .col-sm-4
+
               </Col>
               <Col
-                className="bg-light border"
                 sm="4"
                 xs="6"
               >
-                .col-6 .col-sm-4
+
               </Col>
               <Col
-                className="bg-light border"
                 sm="4"
               >
-                .col-sm-4
+                
               </Col>
-            </Row>
-            <Row>
-              <Col
-                className="bg-light border"
-                sm={{
-                  offset: 1,
-                  order: 2,
-                  size: 6
-                }}
-              >
-                .col-sm-6 .order-sm-2 .offset-sm-1
-              </Col>
-            </Row>
-            <Row>
-              <Col
-                className="bg-light border"
-                md={{
-                  offset: 3,
-                  size: 6
-                }}
-                sm="12"
-              >
-                .col-sm-12 .col-md-6 .offset-md-3
-              </Col>
-            </Row>
-            <Row>
-              <Col
-                className="bg-light border"
-                sm={{
-                  offset: 1,
-                  size: 'auto'
-                }}
-              >
-                .col-sm-auto .offset-sm-1
-              </Col>
-              <Col
-                className="bg-light border"
-                sm={{
-                  offset: 1,
-                  size: 'auto'
-                }}
-              >
-                .col-sm-auto .offset-sm-1
-              </Col>
+              <div style={{ width: "300px", right: "100px"}} >
+              <Button color="success"  >Next</Button>
+              </div>
             </Row>
           </Container>
-          </Card>)
+        </Card>
 
-    }
+      </div>
+
+    )
+
+  }
 }
 
 export default Concept;
