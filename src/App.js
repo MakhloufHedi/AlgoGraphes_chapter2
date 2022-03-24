@@ -22,10 +22,16 @@ function App() {
     // </Router>
     // <Login />
     // <QCM />
-    <Concept />
+    // <Concept />
     // <Scoreboard />
     // <Scoreboardd />
-
+<div className="App">
+      <h1>Welcome to Our Application</h1>
+      <Routes>
+        <Route path="/" element={<Concept />} />
+        <Route path="about" element={<QCM />} />
+      </Routes>
+    </div>
   );
 }
 
