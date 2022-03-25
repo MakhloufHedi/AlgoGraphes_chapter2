@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Login.css';
 import axios from 'axios';
 import jwtDecode from 'jwt-decode';
-// import { Redirect ,Switch , Router } from 'react-router';
+import { Redirect ,Switch , Router , Navigate } from 'react-router';
 // import NavBar from './NavBar';
 
 class Login extends Component {
@@ -44,6 +44,7 @@ class Login extends Component {
             if (response.data.token) {
                 this.setState({ token: response.data.token });
                 console.log(this.state.token);
+                console.log(this.state.redirect)
                 console.log(jwtDecode(this.state.token));
                 localStorage.setItem('token', this.state.token);
                 // console.log(localStorage.getItem('token'));
@@ -100,6 +101,7 @@ class Login extends Component {
             </a> */}
                 </div>
                 {/*this.state.redirect ? <Redirect exact from="/login" to="/dashboard" /> : null*/}
+                { this.state.redirect ?  <Navigate to="/menu" replace /> : null }
             </div>
         )
     }

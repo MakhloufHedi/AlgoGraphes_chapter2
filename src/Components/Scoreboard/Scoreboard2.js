@@ -26,7 +26,6 @@ class Scoreboardd extends Component {
 
   }
 
-
   getScores() {
     axios.get(`http://localhost:8000/api/info`).then(response => {
       this.setState({ Scores: response.data.data })
@@ -40,8 +39,6 @@ class Scoreboardd extends Component {
       console.log(response.data.data)
     })
   }
-
-
 
   handlePageClick = (e) => {
     const selectedPage = e.selected;
@@ -66,8 +63,6 @@ class Scoreboardd extends Component {
     })
 
   }
-
-
 
   render() {
 

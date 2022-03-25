@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import ModalEntity from './ModalEntity';
+// import ModalEntity from './ModalEntity';
 // import Forms from './Forms/ChangePassword';
 // import FormsUpdate from './Forms/FormProfileUserUpdate';
 import jwt_decode from "jwt-decode";
@@ -41,7 +41,7 @@ class Profile extends Component {
             console.log(response.data);
             this.setState({ user: response.data });
             console.log(this.state.user);
-            this.setState({ datenais: this.state.user.datenais.date, dateemb: this.state.user.dateemb.date });
+            // this.setState({ datenais: this.state.user.datenais.date, dateemb: this.state.user.dateemb.date });
             console.log(this.state.user.id);
 
         })
@@ -64,9 +64,9 @@ class Profile extends Component {
                                             <h4>{this.state.user.name} {this.state.user.lastname}</h4>
                                             {/* <p class="text-secondary mb-1">Full Stack Developer</p> */}
                                             <p class="text-muted font-size-sm">{this.state.user.adresse}</p>
-                                            <ModalEntity Buttontitle="Modifier mot de passe" title="Modifier mot de passe" body={<Forms modify={this.state.id} />} />
+                                            {/* <ModalEntity Buttontitle="Modifier mot de passe" title="Modifier mot de passe" body={<Forms modify={this.state.id} />} /> */}
                                             <hr />
-                                            <ModalEntity Buttontitle="Modifier profile" title="Modifier Profile" body={<FormsUpdate modify={this.state.id} user={this.state.user} />} />
+                                            {/* <ModalEntity Buttontitle="Modifier profile" title="Modifier Profile" body={<FormsUpdate modify={this.state.id} user={this.state.user} />} /> */}
                                         </div>
                                     </div>
                                 </div>
@@ -104,6 +104,15 @@ class Profile extends Component {
                                         </div>
                                     </div>
                                     <hr />
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-0">Score</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            {this.state.user.score}
+
+                                        </div>
+                                    </div>
                                     {/* <div class="row">
                                         <div class="col-sm-3">
                                             <h6 class="mb-0">Phone</h6>

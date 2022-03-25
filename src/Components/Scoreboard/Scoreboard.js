@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import ReactPaginate from 'react-paginate';
-
 import axios from 'axios';
 import jwtDecode from 'jwt-decode';
 
@@ -23,7 +22,7 @@ class Scoreboard extends Component {
 
     componentDidMount() {
         this.getSalles();
-       
+
     }
 
 
@@ -39,8 +38,6 @@ class Scoreboard extends Component {
             })
         })
     }
-
-
 
     handlePageClick = (e) => {
         const selectedPage = e.selected;
@@ -77,7 +74,7 @@ class Scoreboard extends Component {
 
         return (
             <div style={{ marginTop: 70 }}>
-                
+
                 <section className="row-section">
 
                     <div className="container">
@@ -98,7 +95,7 @@ class Scoreboard extends Component {
 
                                         <tbody>
                                             {this.state.tableData.map((Score, i) =>
-                                                
+
                                                 <tr class="table-light" key={Score.id}>
                                                     <td>{Score.nom}</td>
                                                     <td>{Score.prenom}</td>
@@ -120,7 +117,7 @@ class Scoreboard extends Component {
                                         containerClassName={"pagination"}
                                         subContainerClassName={"pages pagination"}
                                         activeClassName={"active"} /> */}
-                                    
+
                                 </div>
                             </div>
                         }
