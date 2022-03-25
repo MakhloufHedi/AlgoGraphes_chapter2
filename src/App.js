@@ -11,6 +11,8 @@ import Concept from './Components/Chapters/Chapter1/concept';
 import Scoreboard from './Components/Scoreboard/Scoreboard';
 import {Table} from 'reactstrap'
 import Scoreboardd from './Components/Scoreboard/Scoreboard2';
+import Menu from './Components/HomePage/Menu';
+
 function App() {
   return (
     // <Router>
@@ -25,13 +27,8 @@ function App() {
     // <Concept />
     // <Scoreboard />
     // <Scoreboardd />
-<div className="App">
-      <h1>Welcome to Our Application</h1>
-      <Routes>
-        <Route path="/" element={<Concept />} />
-        <Route path="about" element={<QCM />} />
-      </Routes>
-    </div>
+    <Menu />
+
   );
 }
 
