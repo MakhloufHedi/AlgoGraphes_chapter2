@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Login from './Login.js';
@@ -13,6 +13,7 @@ import { Table } from 'reactstrap'
 import Scoreboardd from './Components/Scoreboard/Scoreboard2';
 import Menu from './Components/HomePage/Menu';
 import Profile from './Components/Profile/Profile';
+import Chapters from './Components/Chapters/Chapters';
 
 function App() {
   return (
@@ -29,13 +30,17 @@ function App() {
     // <Scoreboard />
     // <Scoreboardd />
     // <Menu />
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/menu" element={<Menu />} />
-      <Route path="/Scoreboard" element={<Scoreboardd />} />
-      <Route path="/Profile" element={<Profile />} />
-    </Routes>
-
+    <div classname="test">
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/Scoreboard" element={<Scoreboardd />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/concept" element={<Concept />} />
+        <Route path="/about" element={<QCM />} />
+        <Route path="/Chapters" element={<Chapters />} />
+      </Routes>
+    </div>
   );
 }
 

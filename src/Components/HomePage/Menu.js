@@ -33,26 +33,12 @@ class Menu extends Component {
                     <Row>
                         <Col xs="4" >
                             {/* <CardText>
-                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
-                    <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
-                      <br />
-                      - Plusieurs problèmes dans différentes disciplines (Réseaux
-                      informatiques, télécommunications, chimie, applications
-                      industrielles, ...)
-                      <br />
-                      - Un graphe peut représenter simplement la structure, les
-                      connexions, les cheminements possibles d’un ensemble
-                      complexe comprenant un grand nombre de situations.
-                      <br />
-                      - Un graphe est une structure de données puissante pour
-                      l’informatique.
-                    </p>
-                  </CardText> */}
+                                </CardText> */}
                             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                         </Col>
 
                         <Col xs="4">
-                            <div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}   > Start Game </Button></div>  <br />
+                        <nav><Link to="/Chapters"><div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}   > Start Game </Button></div> </Link></nav> <br />
                             <div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}  > Playground </Button></div>  <br />
                             <nav><Link to="/Scoreboard"><div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}  > Scoreboard </Button></div></Link></nav>  <br />
                             <nav><Link to="/Profile"><div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px", underline: "none" }} > Profile </Button></div></Link></nav>  <br />
