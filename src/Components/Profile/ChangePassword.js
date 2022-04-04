@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Button, Form } from 'react-bootstrap';
+import { Row, Col, Button, Form } from 'reactstrap';
 import axios from 'axios';
 
 class ChangePassword extends Component {

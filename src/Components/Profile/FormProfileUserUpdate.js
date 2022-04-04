@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Button, Form, Container } from 'react-bootstrap';
+import { Row, Col, Button, Form, Container } from 'reactstrap';
 import axios from 'axios';
 import classes from '../Modal/ModalError.module.css'
 import Modal from '../Modal/ModalError';
@@ -48,9 +48,6 @@ class FormProfileUserUpdate extends Component {
                     "email": this.state.email,
                     "nom": this.state.nom,
                     "prenom": this.state.prenom,
-                    "Adresse": this.state.Adresse,
-                    "phone": this.state.phone,
-                    "Fax": this.state.Fax,
                 },
                 headers: {
                     "Content-Type": 'application/merge-patch+json'
@@ -129,7 +126,7 @@ class FormProfileUserUpdate extends Component {
             message = message + " le nom ne doit pas être un nombre ! \n"
         }
 
-        
+
 
         if (!isNaN(this.state.prenom)) {
             message = message + " le prenom ne doit pas être un nombre ! \n"
@@ -138,7 +135,7 @@ class FormProfileUserUpdate extends Component {
         var test3 = this.state.prenom.split("")
         console.log(test3);
         for (let i = 0; i < test3.length; i++) {
-            if (!isNaN(test3[i]) | test3[i]!="") {
+            if (!isNaN(test3[i]) | test3[i] != "") {
                 message = message + " le prenom ne peut pas contenir un nombre ! \n"
                 break;
             }
@@ -147,21 +144,13 @@ class FormProfileUserUpdate extends Component {
         var test2 = this.state.nom.split("");
         console.log(test2);
         for (let i = 0; i < test2.length; i++) {
-            if (!isNaN(test2[i]) | test2[i]!="") {
+            if (!isNaN(test2[i]) | test2[i] != "") {
                 message = message + " le nom ne peut pas contenir un nombre ! \n"
                 break;
             }
         }
 
-        var test5 = this.state.phone.split("")
-        if (test5.length != 8) {
-            message = message + " le num tel doit contenir 8 chiffres ! \n"
-        }
 
-        var test6 = this.state.Fax.split("")
-        if (test6.length != 8) {
-            message = message + " le Fax doit contenir 8 chiffres ! \n"
-        }
 
         return message;
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal } from 'reactstrap';
 import classes from './ModalError.module.css'
 
 class ModalError extends Component {

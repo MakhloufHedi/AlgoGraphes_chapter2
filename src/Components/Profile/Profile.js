@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-// import ModalEntity from './ModalEntity';
-// import Forms from './Forms/ChangePassword';
-// import FormsUpdate from './Forms/FormProfileUserUpdate';
+import ModalEntity from '../Modal/ModalEntity';
+import Forms from './ChangePassword';
+import FormsUpdate from './FormProfileUserUpdate';
 import jwt_decode from "jwt-decode";
 
 class Profile extends Component {
@@ -64,9 +64,9 @@ class Profile extends Component {
                                             <h4>{this.state.user.name} {this.state.user.lastname}</h4>
                                             {/* <p class="text-secondary mb-1">Full Stack Developer</p> */}
                                             <p class="text-muted font-size-sm">{this.state.user.adresse}</p>
-                                            {/* <ModalEntity Buttontitle="Modifier mot de passe" title="Modifier mot de passe" body={<Forms modify={this.state.id} />} /> */}
+                                            <ModalEntity Buttontitle="Modifier mot de passe" title="Modifier mot de passe" body={<Forms modify={this.state.id} />} />
                                             <hr />
-                                            {/* <ModalEntity Buttontitle="Modifier profile" title="Modifier Profile" body={<FormsUpdate modify={this.state.id} user={this.state.user} />} /> */}
+                                            <ModalEntity Buttontitle="Modifier profile" title="Modifier Profile" body={<FormsUpdate modify={this.state.id} user={this.state.user} />} />
                                         </div>
                                     </div>
                                 </div>

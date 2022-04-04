@@ -17,7 +17,15 @@ class QCM extends Component {
     this.state = {
       "rSelected": "",
       "setRSelected": "",
+      "response":"",
     };
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(e) {
+    this.setState({ response: e.target.name });
+    console.log(e.target.name);
+    if(this.state.response.localeCompare("1")==0) {alert("true"); } else alert("false");
   }
 
   render() {
@@ -33,7 +41,7 @@ class QCM extends Component {
             </CardTitle>
             <Row>
               <Button
-                className="buttonstyle"
+                className="buttonstyle" value={this.state.response} name="1" onClick={this.onChange}
               >
                 1. Un graphe dans lequel il n'y a pas de sommets isolés.
               </Button>
@@ -42,7 +50,7 @@ class QCM extends Component {
             <Row style={{ paddingTop: "5px" }}>
               <Button
 
-                className="buttonstyle"
+                className="buttonstyle" value={this.state.response} name="2" onClick={this.onChange}
               >
                 2. Un graphe dans lequel il y a au moins un arc entre deux sommets.
               </Button>
@@ -51,7 +59,7 @@ class QCM extends Component {
             <Row style={{ paddingTop: "5px" }}>
               <Button
 
-                className="buttonstyle"
+                className="buttonstyle" value={this.state.response} name="3" onClick={this.onChange}
               >
                 3.  Un graphe dans lequel si l'arc (i,j) existe alors l'arc (j,i) existe aussi.
               </Button>
@@ -60,7 +68,7 @@ class QCM extends Component {
             <Row style={{ paddingTop: "5px" }}>
               <Button
 
-                className="buttonstyle"
+                className="buttonstyle" value={this.state.response} name="4" onClick={this.onChange}
               >
                 4. Un graphe dans lequel soit l'arc (i,j) existe soit l'arc (j,i).
               </Button>
