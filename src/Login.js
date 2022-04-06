@@ -47,6 +47,7 @@ class Login extends Component {
                 console.log(this.state.redirect)
                 console.log(jwtDecode(this.state.token));
                 localStorage.setItem('token', this.state.token);
+                localStorage.setItem('sc', 0);
                 // console.log(localStorage.getItem('token'));
                 
                // <Router ><Redirect to="/dashboard" /></Router>

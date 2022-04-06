@@ -8,6 +8,19 @@ import chap4 from '../Images/chapter4.png'
 
 class Chapters extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            "score":"",
+        };
+    }
+    componentDidMount() {
+  
+        
+        console.log(localStorage.getItem('sc'))
+        this.setState({ score: localStorage.getItem('sc') });
+
+    }
 
     render() {
         return (
@@ -23,6 +36,18 @@ class Chapters extends Component {
                         <nav ><Link to="/Scoreboard"><img src={chap3} style={{ position: "center", width: "250px", height: "250px" }} /></Link></nav>  <br />
                         <nav ><Link to="/Scoreboard"><img src={chap4} style={{ position: "center", marginBottom: "20px ", width: "250px", height: "250px" }} /></Link></nav>  <br />
 
+                    </Row>
+
+                    <Row>
+                        <Col xs="4" />
+                        <Col xs="4" ><Card style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "70px", width: "350px", fontSize:"25px" }}  > <p>Your current score is = {this.state.score}</p> </Card> </Col>
+                        <Col xs="4" />
+                    </Row>
+
+                    <Row>
+                        <Col xs="4" />
+                        <Col xs="4" ><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}  > Submit Score </Button> </Col>
+                        <Col xs="4" />
                     </Row>
 
                 </Container>

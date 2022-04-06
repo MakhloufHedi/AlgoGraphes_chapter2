@@ -19,9 +19,6 @@ class Menu extends Component {
     }
 
 
-
-
-
     render() {
 
         return (
@@ -51,6 +48,8 @@ class Menu extends Component {
                             {/* <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" /> */}
                         </Col>
                     </Row>
+
+                   
 
 
 

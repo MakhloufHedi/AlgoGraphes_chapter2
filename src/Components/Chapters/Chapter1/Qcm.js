@@ -17,7 +17,7 @@ class QCM extends Component {
     this.state = {
       "rSelected": "",
       "setRSelected": "",
-      "response":"",
+      "response": "",
     };
     this.onChange = this.onChange.bind(this);
   }
@@ -25,7 +25,15 @@ class QCM extends Component {
   onChange(e) {
     this.setState({ response: e.target.name });
     console.log(e.target.name);
-    if(this.state.response.localeCompare("1")==0) {alert("true"); } else alert("false");
+    if (this.state.response.localeCompare("1") == 0) {
+      //  alert("true"); 
+      let c = parseInt(localStorage.getItem("sc"));
+      c+=1;
+      localStorage.setItem("sc",c);
+      alert("true");
+    }
+        else 
+        alert("false");
   }
 
   render() {
