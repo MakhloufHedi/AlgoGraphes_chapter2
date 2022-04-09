@@ -31,10 +31,10 @@ class Chapters extends Component {
                 <Container>
                     <Row xs="4">
 
-                        <nav ><Link to="/Concept"><img src={chap1} style={{ position: "center", marginBottom: "20px", width: "250px", height: "250px" }} /></Link></nav>  <br />
-                        <nav ><Link to="/Scoreboard"><img src={chap2} style={{ position: "center", marginBottom: "20px", width: "250px", height: "250px" }} /></Link></nav>  <br />
-                        <nav ><Link to="/Scoreboard"><img src={chap3} style={{ position: "center", width: "250px", height: "250px" }} /></Link></nav>  <br />
-                        <nav ><Link to="/Scoreboard"><img src={chap4} style={{ position: "center", marginBottom: "20px ", width: "250px", height: "250px" }} /></Link></nav>  <br />
+                        <nav ><Link to="/Concept"><img className="profile-img-card" src={chap1} style={{ position: "center", marginBottom: "20px", width: "250px", height: "250px" }} /></Link></nav>  <br />
+                        <nav ><Link to="/Scoreboard"><img  className="profile-img-card" src={chap2} style={{ position: "center", marginBottom: "20px", width: "250px", height: "250px" }} /></Link></nav>  <br />
+                        <nav ><Link to="/Scoreboard"><img  className="profile-img-card" src={chap3} style={{ position: "center", width: "250px", height: "250px" }} /></Link></nav>  <br />
+                        <nav ><Link to="/Scoreboard"><img  className="profile-img-card" src={chap4} style={{ position: "center", marginBottom: "20px ", width: "250px", height: "250px" }} /></Link></nav>  <br />
 
                     </Row>
 

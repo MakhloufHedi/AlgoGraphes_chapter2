@@ -9,6 +9,7 @@ import {
   CardBody
 } from 'reactstrap';
 import "./mcqstyle.css";
+import { Routes, Route, Link } from "react-router-dom";
 
 class QCM extends Component {
 
@@ -28,12 +29,12 @@ class QCM extends Component {
     if (this.state.response.localeCompare("1") == 0) {
       //  alert("true"); 
       let c = parseInt(localStorage.getItem("sc"));
-      c+=1;
-      localStorage.setItem("sc",c);
+      c += 1;
+      localStorage.setItem("sc", c);
       alert("true");
     }
-        else 
-        alert("false");
+    else
+      alert("false");
   }
 
   render() {
@@ -84,6 +85,17 @@ class QCM extends Component {
             <br />
             {/* <p className="buttonstyle">You Selected: </p> */}
           </CardBody>
+          <Row>
+            <Col sm="4" xs="6" className="bg-light border" ></Col>
+            <Col sm="4" xs="6"></Col>
+            <Col sm="4" className="bg-light border"></Col>
+            <br />
+            <div style={{ width: "300px", right: "100px" }} >
+              <nav>
+                <Link to="/concept2" style={{ "font-size": "25px", "font-family": "Times New Roman", color: "green" }}><img style={{ height: "40px", width: "100px" }} id="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2560px-Arrow_east.svg.png" /></Link>
+              </nav>
+            </div>
+          </Row>
         </Card>
       </div>
     );

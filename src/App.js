@@ -14,6 +14,8 @@ import Scoreboardd from './Components/Scoreboard/Scoreboard2';
 import Menu from './Components/HomePage/Menu';
 import Profile from './Components/Profile/Profile';
 import Chapters from './Components/Chapters/Chapters';
+import Concept2 from './Components/Chapters/Chapter1/concept2';
+import Concept3 from './Components/Chapters/Chapter1/concept3';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path="/Scoreboard" element={<Scoreboardd />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/concept" element={<Concept />} />
+        <Route path="/concept2" element={<Concept2 />} />
+        <Route path="/concept3" element={<Concept3 />} />
         <Route path="/about" element={<QCM />} />
         <Route path="/Chapters" element={<Chapters />} />
       </Routes>

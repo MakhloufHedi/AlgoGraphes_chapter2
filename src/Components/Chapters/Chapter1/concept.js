@@ -33,9 +33,11 @@ class Concept extends Component {
                 </CardText>
               </Col>
               <Col xs="1"></Col>
+              {/* images */}
               <Col xs="3">
                 <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
               </Col>
+              {/* images  */}
             </Row>
 
             <Row>
