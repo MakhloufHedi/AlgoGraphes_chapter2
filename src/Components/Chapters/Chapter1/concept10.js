@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap'
 import { Routes, Route, Link } from "react-router-dom";
 
-class Concept2 extends Component {
+class Concept10 extends Component {
 
 
 
@@ -19,7 +19,7 @@ class Concept2 extends Component {
                                     <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        - Un graphe orienté est un couple G=(S,A) :
+                                        - PUn graphe orienté est un couple G=(S,A) :
                                         S ensemble de sommets ou nœuds (|S|=n );
                                         A inclue S × S ensemble d’arcs (|A|=m).
                                         <br />
@@ -28,31 +28,6 @@ class Concept2 extends Component {
                                         <br />
                                         - Un graphe non orienté est un couple G=(S,A) :
                                         A inclue S × S ensemble d’arêtes.
-                                        <br />
-                                        - On appelle graphe valué et on note G=(S,A,c) un graphe où on
-                                        associe une fonction c : A → IR appelée coût ou poids
-                                        ou valeur des arcs .
-                                        Le coût d’un arc (i,j) est noté c(i,j) ou cij
-                                        <br />
-                                        - Un graphe est dit symétrique si : quelquesoit i, j ∈ S, (i, j )∈ A indique que (j, i)∈ A.
-                                        i.e. un graphe est symétrique lorsque chaque paire de sommets
-                                        reliés dans un sens l’est aussi dans l’autre
-                                        <br />
-                                        - Un graphe est dit complet si quelquesoit i,j ∈ S, (i, j)  A  (j, i) ∈ A.
-                                        i.e. Un graphe est complet si deux sommets quelconques sont
-                                        reliés dans au moins une direction
-                                        <br />
-                                        Degrès:
-                                        <br />
-                                        Le degré extérieur de i, d+(i), est le nombre de sommets suivantsde i ; d+(i) = |S(i)|.
-                                        <br />
-                                        Le degré intérieur de i, d-(i), est le nombre de sommets précédents
-
-                                        de i ; d-(i) = |P(i)|.
-                                        <br />
-                                        Le degré de i est d(i) = d+(i) + d-(i).
-
-
                                     </p>
                                 </CardText>
                             </Col>
@@ -83,4 +58,4 @@ class Concept2 extends Component {
     }
 }
 
-export default Concept2;
+export default Concept10;

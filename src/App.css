@@ -1,14 +1,14 @@
-.App {
-  /* text-align: center; */
-  background-image: linear-gradient(rgb(90, 134, 199), rgb(36, 66, 163));
-}
 
-body, html {
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgb(90, 134, 199), rgb(38, 69, 173));
+.App,body, html {
+  background-repeat: repeat;
+  /* background-image: linear-gradient(rgb(90, 134, 199), rgb(38, 69, 173)); */
   /* background-color: #206cc9; */
+  background-image: url("C:/Users/moham/Documents/ProjetProgrammation/ProjectImages/BestImaginaryBeaver-size_restricted.gif");
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  
 }
-.test {
+/* .test {
   width: 100wh;
   height: 90vh;
   color: #fff;
@@ -17,8 +17,8 @@ body, html {
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
-  }
-.App-header {
+  } */
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -27,5 +27,5 @@ body, html {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 

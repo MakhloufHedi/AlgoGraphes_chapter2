@@ -8,7 +8,7 @@ class Concept extends Component {
 
   render() {
     return (
-      <div className="App" >
+      <div className="App" style={{marginTop:"0px"}}>
 
         <Card body inverse /*color="success"*/ style={{ position: "center", width: "1200px", "background": "#2F8DD6" }}>
           <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman" }}>Introduction sur les graphes</CardTitle>

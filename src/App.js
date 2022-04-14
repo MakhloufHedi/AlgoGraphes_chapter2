@@ -16,6 +16,13 @@ import Profile from './Components/Profile/Profile';
 import Chapters from './Components/Chapters/Chapters';
 import Concept2 from './Components/Chapters/Chapter1/concept2';
 import Concept3 from './Components/Chapters/Chapter1/concept3';
+import Concept4 from './Components/Chapters/Chapter1/concept4';
+import Concept5 from './Components/Chapters/Chapter1/concept5';
+import Concept6 from './Components/Chapters/Chapter1/concept6';
+import Concept7 from './Components/Chapters/Chapter1/concept7';
+import Concept8 from './Components/Chapters/Chapter1/concept8';
+import Concept9 from './Components/Chapters/Chapter1/concept9';
+import Concept10 from './Components/Chapters/Chapter1/concept10';
 
 function App() {
   return (
@@ -33,14 +40,22 @@ function App() {
     // <Scoreboardd />
     // <Menu />
     <div classname="test">
+      <p style={{ fontSize: "10px" }}>User discretion advised</p>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/Scoreboard" element={<Scoreboardd />} />
         <Route path="/Profile" element={<Profile />} />
-        <Route path="/concept" element={<Concept />} />
-        <Route path="/concept2" element={<Concept2 />} />
-        <Route path="/concept3" element={<Concept3 />} />
+        <Route path="/chapter1/concept" element={<Concept />} />
+        <Route path="/chapter1/concept2" element={<Concept2 />} />
+        <Route path="/chapter1/concept3" element={<Concept3 />} />
+        <Route path="/chapter1/concept4" element={<Concept4 />} />
+        <Route path="/chapter1/concept5" element={<Concept5 />} />
+        <Route path="/chapter1/concept6" element={<Concept6 />} />
+        <Route path="/chapter1/concept7" element={<Concept7 />} />
+        <Route path="/chapter1/concept8" element={<Concept8 />} />
+        <Route path="/chapter1/concept9" element={<Concept9 />} />
+        <Route path="/chapter1/concept10" element={<Concept10 />} />
         <Route path="/about" element={<QCM />} />
         <Route path="/Chapters" element={<Chapters />} />
       </Routes>
