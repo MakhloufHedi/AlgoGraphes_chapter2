@@ -41,9 +41,9 @@ class Concept extends Component {
             </Row>
 
             <Row>
-              <Col sm="4" xs="6" className="bg-light border" ></Col>
+              {/* <Col sm="4" xs="6" className="bg-light border" ></Col>
               <Col sm="4" xs="6"></Col>
-              <Col sm="4" className="bg-light border"></Col>
+              <Col sm="4" className="bg-light border"></Col> */}
               <br />
               <div style={{ width: "300px", right: "100px" }} >
                 <nav>

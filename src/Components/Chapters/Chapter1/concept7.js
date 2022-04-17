@@ -11,7 +11,7 @@ class Concept7 extends Component {
             <div className="App" >
 
                 <Card body inverse /*color="success"*/ style={{ position: "center", width: "1200px", "background": "#2F8DD6" }}>
-                    <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman" }}>Introduction sur les graphes</CardTitle>
+                    <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman" }}> Matrice d’incidence:</CardTitle>
                     <Container>
                         <Row>
                             <Col xs="8">
@@ -19,12 +19,10 @@ class Concept7 extends Component {
                                     <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
-                                        <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
+                                        
+                                        Soit le graphe G = (S;A). La présentation par matrice d’incidence de G consiste en une
+                                        matrice C de taille n m telle que:
+                                        cik= 1 si i est la source de uk; -1 si i est la destination de uk;0 sinon
                                         <br />
                                         - Un graphe non orienté est un couple G=(S,A) :
                                         A inclue S × S ensemble d’arêtes.

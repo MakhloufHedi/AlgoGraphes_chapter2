@@ -16,18 +16,27 @@ class Concept9 extends Component {
                         <Row>
                             <Col xs="8">
                                 <CardText>
-                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
+                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Représentation par listes </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
+                                        <h1>A partir de la matrice d’adjacence: </h1>
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
+                                        - Un graphe peu dense est un graphe où
+                                        Pour stocker uniquement les termes non nuls, on utilise deux
+                                        tableaux (.) de dimension n+1 et β(.) de dimension m dans le
+                                        cas orienté et 2m dans le cas non orienté.
                                         <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
+                                        - Pour chaque sommet i la liste des successeurs est contenu dans
+                                        β(.) à partir de la case numéro (i). Donc l’ensemble des
+                                        informations relatives à i est contenu entre les cases  α(i) et
+                                        α(i+1)-1 du tableau β(.)
                                         <br />
-                                        - Un graphe non orienté est un couple G=(S,A) :
-                                        A inclue S × S ensemble d’arêtes.
+                                        - α(.) de dimension n+1 et β(.) de dimension m dans le
+                                        cas orienté et 2m dans le cas non orienté.
+                                        <br />
+                                        - Pour chaque sommet i la liste des successeurs est contenu dans
+                                        β(.) à partir de la case numéro α(i). Donc l’ensemble des
+                                        informations relatives à i est contenu entre les cases α(i) et
+                                        α(i+1)-1 du tableau β(.) .
                                     </p>
                                 </CardText>
                             </Col>

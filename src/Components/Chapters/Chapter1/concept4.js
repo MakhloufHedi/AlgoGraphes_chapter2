@@ -16,18 +16,21 @@ class Concept4 extends Component {
                         <Row>
                             <Col xs="8">
                                 <CardText>
-                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
+                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Connexité </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
+                                        - Un graphe G = (S,A) est dit simplement connexe ou connexe si :quelquesoit, i,j ∈ S, il existe une chaîne entre i et j.
+                                        - Un graphe orienté est connexe si le graphe non orienté associé est
+                                        connexe.
                                         <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
+                                        - Une composante connexe C d’un graphe G = (S,A) est un sous-
+                                        ensemble maximal de sommets tels que deux quelconques d’entreeux soient reliés par une chaîne : si i  C, alors :
+                                        ▪quelquesoit j ∈ C, il existe une chaîne reliant i à j,
+                                        ▪quelquesoit k ∈ S \ C, il n’existe pas de chaîne reliant i à k.
                                         <br />
-                                        - Un graphe non orienté est un couple G=(S,A) :
-                                        A inclue S × S ensemble d’arêtes.
+                                        - Un graphe G = (S,A) est dit simplement connexe ou connexe si :
+                                        ▪quelquesoit, i,j ∈ S, il existe une chaîne entre i et j.
+                                        <br/>
                                     </p>
                                 </CardText>
                             </Col>
@@ -38,9 +41,9 @@ class Concept4 extends Component {
                         </Row>
 
                         <Row>
-                            <Col sm="4" xs="6" className="bg-light border" ></Col>
+                            {/* <Col sm="4" xs="6" className="bg-light border" ></Col>
                             <Col sm="4" xs="6"></Col>
-                            <Col sm="4" className="bg-light border"></Col>
+                            <Col sm="4" className="bg-light border"></Col> */}
                             <br />
                             <div style={{ width: "300px", right: "100px" }} >
                                 <nav>

@@ -16,18 +16,20 @@ class Concept3 extends Component {
                         <Row>
                             <Col xs="8">
                                 <CardText>
-                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
+                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Matrice d’adjacence </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
+                                        
+                                        *Soit le graphe G = (S;A). On suppose que les sommets de S sont
+                                        numérotés de 1 à n, avec n =|S|. La représentation par matrice
+                                        d’adjacence de G consiste en une matrice M de taille n n telle que:
+                                        mij: 1 si (i,j) appartient à A, 0 sinon
+                                        *Dans le cas de graphes non orientés, la matrice est symétrique par
+                                        rapport à sa diagonale descendante. Dans ce cas, on peut ne mémoriser
+                                        que la composante triangulaire supérieure de la matrice d’adjacence.
+                                        mij =1 si i et j adjacents,0 sinon
                                         <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
-                                        <br />
-                                        - Un graphe non orienté est un couple G=(S,A) :
-                                        A inclue S × S ensemble d’arêtes.
+                                        
                                     </p>
                                 </CardText>
                             </Col>

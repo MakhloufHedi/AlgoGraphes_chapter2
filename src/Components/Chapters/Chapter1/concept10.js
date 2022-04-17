@@ -18,16 +18,18 @@ class Concept10 extends Component {
                                 <CardText>
                                     <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
+                                        <h1>A partir de la matrice d’incidence:</h1>
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
+                                        - Un multigraphe est un graphe où deux sommets adjacents
+                                        peuvent être reliés par plus d’un arc ayant la même orientation.
                                         <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
+                                        - On appelle p-graphe un multigraphe dans lequel il n’existe pas
+                                        plus de p arcs entre deux sommets i et j dans le même sens.
                                         <br />
-                                        - Un graphe non orienté est un couple G=(S,A) :
-                                        A inclue S × S ensemble d’arêtes.
+                                        - On définit deux tableaux (.) et β(.) de dimension m où on
+                                        associe à chaque arc les numéros de ses extrémités (u)
+                                        ou β(u). Dans le cas orienté, (u) est l’extrémité initiale et β(u)
+                                        est l’extrémité finale .
                                     </p>
                                 </CardText>
                             </Col>

@@ -11,23 +11,20 @@ class Concept6 extends Component {
             <div className="App" >
 
                 <Card body inverse /*color="success"*/ style={{ position: "center", width: "1200px", "background": "#2F8DD6" }}>
-                    <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman" }}>Introduction sur les graphes</CardTitle>
+                    <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman" }}>Degrès:</CardTitle>
                     <Container>
                         <Row>
                             <Col xs="8">
                                 <CardText>
                                     <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
+                                    
+                                        Le degré extérieur de i, d+(i), est le nombre de sommets suivantsde i ; d+(i) = |S(i)|.
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
+                                        Le degré intérieur de i, d-(i), est le nombre de sommets précédentsde i ; d-(i) = |P(i)|.
                                         <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
-                                        <br />
-                                        - Un graphe non orienté est un couple G=(S,A) :
-                                        A inclue S × S ensemble d’arêtes.
+                                        Le degré de i est d(i) = d+(i) + d-(i).
+
                                     </p>
                                 </CardText>
                             </Col>

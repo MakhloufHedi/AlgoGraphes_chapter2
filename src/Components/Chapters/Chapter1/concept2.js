@@ -16,7 +16,7 @@ class Concept2 extends Component {
                         <Row>
                             <Col xs="8">
                                 <CardText>
-                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
+                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Définitions </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
                                         - Un graphe orienté est un couple G=(S,A) :
@@ -42,16 +42,7 @@ class Concept2 extends Component {
                                         i.e. Un graphe est complet si deux sommets quelconques sont
                                         reliés dans au moins une direction
                                         <br />
-                                        Degrès:
-                                        <br />
-                                        Le degré extérieur de i, d+(i), est le nombre de sommets suivantsde i ; d+(i) = |S(i)|.
-                                        <br />
-                                        Le degré intérieur de i, d-(i), est le nombre de sommets précédents
-
-                                        de i ; d-(i) = |P(i)|.
-                                        <br />
-                                        Le degré de i est d(i) = d+(i) + d-(i).
-
+                                        
 
                                     </p>
                                 </CardText>

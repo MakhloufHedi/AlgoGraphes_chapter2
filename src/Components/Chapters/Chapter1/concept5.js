@@ -16,18 +16,20 @@ class Concept5 extends Component {
                         <Row>
                             <Col xs="8">
                                 <CardText>
-                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
+                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Isthme et point d'articulation: </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
+                                        - Une arête d'un graphe est un isthme si sa suppression augmente le
+                                        nombre de composantes connexes du graphe.
                                         <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
+                                        - Si le graphe est connexe, une arête est un isthme si et seulement si
+                                        elle n'appartient à aucun cycle.
                                         <br />
-                                        - Un graphe non orienté est un couple G=(S,A) :
-                                        A inclue S × S ensemble d’arêtes.
+                                        - Un sommet d'un graphe est un point d'articulation si sa
+                                        suppression augmente le nombre de composantes connexes du   
+                                        graphe. Plus généralement, un ensemble d'articulation d'un graphe
+                                        est un ensemble de sommets dont la suppression augmente le
+                                        nombre de composantes connexes du graphe.
                                     </p>
                                 </CardText>
                             </Col>

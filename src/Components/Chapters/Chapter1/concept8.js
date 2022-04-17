@@ -16,18 +16,16 @@ class Concept8 extends Component {
                         <Row>
                             <Col xs="8">
                                 <CardText>
-                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
+                                    <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Détermination des rangs (graphes sans circuits) </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        - PUn graphe orienté est un couple G=(S,A) :
-                                        S ensemble de sommets ou nœuds (|S|=n );
-                                        A inclue S × S ensemble d’arcs (|A|=m).
+                                        1 - quelquesoit i appartient à S, di = ensemble des sommets précédents  de i
                                         <br />
-                                        - Pour un arc a = (i, j), i est l’extrémité initiale, j l’extrémité finale
-                                        (ou bien origine et destination).
+                                        2 - Sk = ensemble des sommets de degré = 0 et Sk+1 = ensemble vide
                                         <br />
-                                        - Un graphe non orienté est un couple G=(S,A) :
-                                        A inclue S × S ensemble d’arêtes.
+                                        - Quelquesoit i appartient à Sk faire : r(i)=k; quelquesoit j appartient au suivants, dj=dj -1;
+                                        <br />
+                                        3- k= k+1 , si Sk = ensemble vide, Fin. Sinon, aller en 2.
                                     </p>
                                 </CardText>
                             </Col>
