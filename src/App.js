@@ -56,7 +56,16 @@ function App() {
         <Route path="/chapter1/concept8" element={<Concept8 />} />
         <Route path="/chapter1/concept9" element={<Concept9 />} />
         <Route path="/chapter1/concept10" element={<Concept10 />} />
-        <Route path="/about" element={<QCM />} />
+        <Route path="/chapter1/qcm1" element={<QCM />} />
+        <Route path="/chapter1/qcm2" element={<QCM />} />
+        <Route path="/chapter1/qcm3" element={<QCM />} />
+        <Route path="/chapter1/qcm4" element={<QCM />} />
+        <Route path="/chapter1/qcm5" element={<QCM />} />
+        <Route path="/chapter1/qcm6" element={<QCM />} />
+        <Route path="/chapter1/qcm7" element={<QCM />} />
+        <Route path="/chapter1/qcm8" element={<QCM />} />
+        <Route path="/chapter1/qcm9" element={<QCM />} />
+        <Route path="/chapter1/qcm10" element={<QCM />} />
         <Route path="/Chapters" element={<Chapters />} />
       </Routes>
     </div>
