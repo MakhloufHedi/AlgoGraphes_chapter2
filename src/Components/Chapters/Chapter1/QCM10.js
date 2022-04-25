@@ -86,9 +86,9 @@ class QCM extends Component {
             {/* <p className="buttonstyle">You Selected: </p> */}
           </CardBody>
           <Row>
-            <Col sm="4" xs="6" className="bg-light border" ></Col>
+            <Col sm="4" xs="6"  ></Col>
             <Col sm="4" xs="6"></Col>
-            <Col sm="4" className="bg-light border"></Col>
+            <Col sm="4" ></Col>
             <br />
             <div style={{ width: "300px", right: "100px" }} >
               <nav>

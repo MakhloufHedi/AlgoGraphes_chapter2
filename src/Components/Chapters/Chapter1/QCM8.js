@@ -86,13 +86,13 @@ class QCM extends Component {
             {/* <p className="buttonstyle">You Selected: </p> */}
           </CardBody>
           <Row>
-            <Col sm="4" xs="6" className="bg-light border" ></Col>
+            <Col sm="4" xs="6"  ></Col>
             <Col sm="4" xs="6"></Col>
-            <Col sm="4" className="bg-light border"></Col>
+            <Col sm="4" ></Col>
             <br />
             <div style={{ width: "300px", right: "100px" }} >
               <nav>
-                <Link to="/chapter1/concept8" style={{ "font-size": "25px", "font-family": "Times New Roman", color: "green" }}><img style={{ height: "40px", width: "100px" }} id="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2560px-Arrow_east.svg.png" /></Link>
+                <Link to="/chapter1/concept10" style={{ "font-size": "25px", "font-family": "Times New Roman", color: "green" }}><img style={{ height: "40px", width: "100px" }} id="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2560px-Arrow_east.svg.png" /></Link>
               </nav>
             </div>
           </Row>

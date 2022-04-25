@@ -7,6 +7,16 @@ import { Route, Routes, Navigate, Link, withRouter } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Test from './Test';
 import QCM from './Components/Chapters/Chapter1/Qcm.js';
+import QCM2 from './Components/Chapters/Chapter1/QCM2.js';
+import QCM3 from './Components/Chapters/Chapter1/QCM3.js';
+import QCM4 from './Components/Chapters/Chapter1/QCM4.js';
+import QCM5 from './Components/Chapters/Chapter1/QCM5.js';
+import QCM6 from './Components/Chapters/Chapter1/QCM6.js';
+import QCM7 from './Components/Chapters/Chapter1/QCM7.js';
+import QCM8 from './Components/Chapters/Chapter1/QCM8.js';
+import QCM9 from './Components/Chapters/Chapter1/QCM9.js';
+import QCM10 from './Components/Chapters/Chapter1/QCM10.js';
+
 import Concept from './Components/Chapters/Chapter1/concept';
 import Scoreboard from './Components/Scoreboard/Scoreboard';
 import { Table } from 'reactstrap'
@@ -57,15 +67,15 @@ function App() {
         <Route path="/chapter1/concept9" element={<Concept9 />} />
         <Route path="/chapter1/concept10" element={<Concept10 />} />
         <Route path="/chapter1/qcm1" element={<QCM />} />
-        <Route path="/chapter1/qcm2" element={<QCM />} />
-        <Route path="/chapter1/qcm3" element={<QCM />} />
-        <Route path="/chapter1/qcm4" element={<QCM />} />
-        <Route path="/chapter1/qcm5" element={<QCM />} />
-        <Route path="/chapter1/qcm6" element={<QCM />} />
-        <Route path="/chapter1/qcm7" element={<QCM />} />
-        <Route path="/chapter1/qcm8" element={<QCM />} />
-        <Route path="/chapter1/qcm9" element={<QCM />} />
-        <Route path="/chapter1/qcm10" element={<QCM />} />
+        <Route path="/chapter1/qcm2" element={<QCM2 />} />
+        <Route path="/chapter1/qcm3" element={<QCM3 />} />
+        <Route path="/chapter1/qcm4" element={<QCM4 />} />
+        <Route path="/chapter1/qcm5" element={<QCM5 />} />
+        <Route path="/chapter1/qcm6" element={<QCM6 />} />
+        <Route path="/chapter1/qcm7" element={<QCM7 />} />
+        <Route path="/chapter1/qcm8" element={<QCM8 />} />
+        <Route path="/chapter1/qcm9" element={<QCM9 />} />
+        <Route path="/chapter1/qcm10" element={<QCM10 />} />
         <Route path="/Chapters" element={<Chapters />} />
       </Routes>
     </div>
