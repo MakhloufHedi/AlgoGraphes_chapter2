@@ -5,6 +5,8 @@ import chap1 from '../Images/chapter1.png'
 import chap2 from '../Images/chapter2.png'
 import chap3 from '../Images/chapter3.png'
 import chap4 from '../Images/chapter4.png'
+import jwtDecode from 'jwt-decode';
+import axios from 'axios';
 
 class Chapters extends Component {
 
@@ -12,15 +14,47 @@ class Chapters extends Component {
         super(props);
         this.state = {
             "score":"",
+             UserId: jwtDecode(localStorage.getItem('token')).UserId,
+             sc: jwtDecode(localStorage.getItem('token')).score,
         };
+
+        this.handlescore = this.handlescore.bind(this);
+        this.updatescore = this.updatescore.bind(this);
     }
     componentDidMount() {
   
         
-        console.log(localStorage.getItem('sc'))
+        // console.log(localStorage.getItem('sc'))
+        // console.log(this.state.sc);
         this.setState({ score: localStorage.getItem('sc') });
 
     }
+
+    handlescore(){
+        if(localStorage.getItem('sc') > this.state.sc){
+            this.updatescore(this.state.UserId);
+        }
+        else{
+            alert("ce n'est pas votre meilleur score ! vous devez dépasser :  " + this.state.score)
+        }
+    }
+    
+  updatescore(id) {
+    axios({
+      method: 'patch',
+      url: `http://localhost:8000/api/users/${id}`,
+      data: {
+        "score": this.state.sc
+      },
+      headers: {
+        "Content-Type": 'application/merge-patch+json'
+      }
+    }).then(res =>{
+      alert("score modifié")
+    }).catch(err => {
+      alert("Failed operation")
+    })
+  }
 
     render() {
         return (
@@ -46,7 +80,7 @@ class Chapters extends Component {
 
                     <Row>
                         <Col xs="4" />
-                        <Col xs="4" ><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}  > Submit Score </Button> </Col>
+                        <Col xs="4" ><Button onClick={this.handlescore} style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}  > Submit Score </Button> </Col>
                         <Col xs="4" />
                     </Row>
 

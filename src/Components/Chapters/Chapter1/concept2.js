@@ -49,7 +49,7 @@ class Concept2 extends Component {
                             </Col>
                             <Col xs="1"></Col>
                             <Col xs="3">
-                                <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
+                                {/* <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" /> */}
                             </Col>
                         </Row>
 

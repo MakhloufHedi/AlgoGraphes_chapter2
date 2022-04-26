@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap'
 import { Routes, Route, Link } from "react-router-dom";
+import img1 from './Images/matrice dincidence.png'
+import img2 from './Images/matinci.png'
 
 class Concept7 extends Component {
 
@@ -19,7 +21,7 @@ class Concept7 extends Component {
                                     <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Modélisation </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        
+
                                         Soit le graphe G = (S;A). La présentation par matrice d’incidence de G consiste en une
                                         matrice C de taille n m telle que:
                                         cik= 1 si i est la source de uk; -1 si i est la destination de uk;0 sinon
@@ -31,7 +33,9 @@ class Concept7 extends Component {
                             </Col>
                             <Col xs="1"></Col>
                             <Col xs="3">
-                                <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
+                                <img src={img1} style={{ marginLeft: "-100px" }} />
+                                <br />
+                                <img src={img2} style={{ marginLeft: "-100px", marginTop: "20px", width: "390px" }} />
                             </Col>
                         </Row>
 

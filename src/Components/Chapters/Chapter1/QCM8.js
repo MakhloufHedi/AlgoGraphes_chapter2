@@ -24,9 +24,8 @@ class QCM extends Component {
   }
 
   onChange(e) {
-    this.setState({ response: e.target.name });
     console.log(e.target.name);
-    if (this.state.response.localeCompare("1") == 0) {
+    if (e.target.name.localeCompare("2") == 0) {
       //  alert("true"); 
       let c = parseInt(localStorage.getItem("sc"));
       c += 1;
@@ -45,14 +44,14 @@ class QCM extends Component {
         <Card className="cardpostion mcqstyle">
           <CardBody>
             <CardTitle className="textstyleheader">
-              <h2>Q1. Un graphe symétrique est :</h2>
+              <h2>Q8. dans le cas orienté α(.) et β(.) sont de dimensions (n = nombre de sommets , m= nombre d'arcs)  :</h2>
               <br />
             </CardTitle>
             <Row>
               <Button
                 className="buttonstyle" value={this.state.response} name="1" onClick={this.onChange}
               >
-                1. Un graphe dans lequel il n'y a pas de sommets isolés.
+                1. n+1 et 2m+1.
               </Button>
             </Row>
             <br />
@@ -61,7 +60,7 @@ class QCM extends Component {
 
                 className="buttonstyle" value={this.state.response} name="2" onClick={this.onChange}
               >
-                2. Un graphe dans lequel il y a au moins un arc entre deux sommets.
+                2. n+1 et m.
               </Button>
             </Row>
             <br />
@@ -70,7 +69,7 @@ class QCM extends Component {
 
                 className="buttonstyle" value={this.state.response} name="3" onClick={this.onChange}
               >
-                3.  Un graphe dans lequel si l'arc (i,j) existe alors l'arc (j,i) existe aussi.
+                3.  n-1 et 2m.
               </Button>
             </Row>
             <br />
@@ -79,7 +78,7 @@ class QCM extends Component {
 
                 className="buttonstyle" value={this.state.response} name="4" onClick={this.onChange}
               >
-                4. Un graphe dans lequel soit l'arc (i,j) existe soit l'arc (j,i).
+                4. 2n et 2m.
               </Button>
             </Row>
             <br />

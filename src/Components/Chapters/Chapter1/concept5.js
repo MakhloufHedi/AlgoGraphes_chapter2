@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap'
 import { Routes, Route, Link } from "react-router-dom";
-
+import img from './Images/isthme.png'
 class Concept5 extends Component {
 
 
@@ -35,7 +35,7 @@ class Concept5 extends Component {
                             </Col>
                             <Col xs="1"></Col>
                             <Col xs="3">
-                                <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
+                                <img style ={{marginLeft:"-100px",width:"370px",marginTop:"200px", height:"150px"}} src={img} />
                             </Col>
                         </Row>
 

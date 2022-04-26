@@ -45,7 +45,7 @@ class QCM extends Component {
         <Card className="cardpostion mcqstyle">
           <CardBody>
             <CardTitle className="textstyleheader">
-              <h2>Q1. Un graphe symétrique est :</h2>
+              <h2>Q10. Un graphe symétrique est :</h2>
               <br />
             </CardTitle>
             <Row>

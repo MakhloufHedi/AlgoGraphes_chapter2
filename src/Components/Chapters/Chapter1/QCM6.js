@@ -24,9 +24,8 @@ class QCM extends Component {
   }
 
   onChange(e) {
-    this.setState({ response: e.target.name });
     console.log(e.target.name);
-    if (this.state.response.localeCompare("1") == 0) {
+    if (e.target.name.localeCompare("1") == 0) {
       //  alert("true"); 
       let c = parseInt(localStorage.getItem("sc"));
       c += 1;
@@ -45,7 +44,7 @@ class QCM extends Component {
         <Card className="cardpostion mcqstyle">
           <CardBody>
             <CardTitle className="textstyleheader">
-              <h2>Q1. Soit C une matrice d'incidence et u1 un arc et i=2 le sommet, C(u1,2) vaut :</h2>
+              <h2>Q6. Soit C une matrice d'incidence et u1 un arc et i=2 le sommet, C(u1,2) vaut :</h2>
               <br />
             </CardTitle>
             <Row>

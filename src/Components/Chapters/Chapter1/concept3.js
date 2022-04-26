@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap'
 import { Routes, Route, Link } from "react-router-dom";
+import img1 from './Images/matrice dadjacence.png'
+import img2 from './Images/matdadjs.png'
 
 class Concept3 extends Component {
 
@@ -19,7 +21,7 @@ class Concept3 extends Component {
                                     <p style={{ "font-size": "35px", "font-family": "Times New Roman" }}> Matrice d’adjacence </p>
                                     <p style={{ "font-size": "25px", "font-family": "Times New Roman" }} >
                                         <br />
-                                        
+
                                         *Soit le graphe G = (S;A). On suppose que les sommets de S sont
                                         numérotés de 1 à n, avec n =|S|. La représentation par matrice
                                         d’adjacence de G consiste en une matrice M de taille n n telle que:
@@ -29,13 +31,15 @@ class Concept3 extends Component {
                                         que la composante triangulaire supérieure de la matrice d’adjacence.
                                         mij =1 si i et j adjacents,0 sinon
                                         <br />
-                                        
+
                                     </p>
                                 </CardText>
                             </Col>
                             <Col xs="1"></Col>
                             <Col xs="3">
-                                <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
+                                <img src={img1} style={{ marginLeft: "-100px" }} />
+                                <br />
+                                <img src={img2} style={{ marginLeft: "-100px", marginTop: "20px", width: "390px" }} />
                             </Col>
                         </Row>
 

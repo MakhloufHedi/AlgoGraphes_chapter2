@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap'
 import { Routes, Route, Link } from "react-router-dom";
+import img1 from './Images/liste dadj.png'
+import img2 from './Images/intro.png'
 
 class Concept9 extends Component {
 
@@ -42,7 +44,10 @@ class Concept9 extends Component {
                             </Col>
                             <Col xs="1"></Col>
                             <Col xs="3">
-                                <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
+                                
+                                <img src={img2} style={{ marginLeft: "-100px", width: "390px" }} />
+                                <br />
+                                <img src={img1} style={{ marginLeft: "-100px", width: "390px", marginTop: "20px" }} />
                             </Col>
                         </Row>
 

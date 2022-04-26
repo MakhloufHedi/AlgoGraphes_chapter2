@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap'
 import { Routes, Route, Link } from "react-router-dom";
+import img1 from './Images/liste dinc.png'
+import img2 from './Images/listedinc.png'
 
 class Concept10 extends Component {
 
@@ -10,7 +12,7 @@ class Concept10 extends Component {
         return (
             <div className="App" >
 
-                <Card body inverse /*color="success"*/ style={{ position: "center", width: "1200px", "background": "#2F8DD6" }}>
+                <Card body inverse /*color="success"*/ style={{ position: "center", width: "1350px", "background": "#2F8DD6" }}>
                     <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman" }}>Introduction sur les graphes</CardTitle>
                     <Container>
                         <Row>
@@ -35,7 +37,11 @@ class Concept10 extends Component {
                             </Col>
                             <Col xs="1"></Col>
                             <Col xs="3">
-                                <img id="profile-img" className="profile-img-card" src="http://www.ensi-uma.tn/wp-content/uploads/2017/01/cropped-Logo-p.png" />
+                                
+                                <img src={img2} style={{ marginLeft: "-100px", width: "390px" }} />
+                                <br />
+                                <img src={img1} style={{ marginLeft: "-100px",width:"390px", marginTop: "20px" }} />
+                                
                             </Col>
                         </Row>
 
