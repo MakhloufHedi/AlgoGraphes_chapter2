@@ -1,0 +1,70 @@
+.mcqstyle {
+    background-color: #1d2671;
+    border-radius: 1.5vh;
+    box-shadow: #2a2a2a 1px 1px 12px;
+    max-width: 100%;
+  }
+  
+  .cardpostion {
+    padding: 3vh;
+  }
+  .textstyleheader {
+    color: #000000;
+  }
+  .buttonstyle {
+    padding: 10px;
+    background: #064f52;
+    border: 0px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: left;
+    color: white;
+  }
+  
+  .buttonstyle:hover {
+    color: #c33764;
+    background: white;
+  }
+  .buttongroup {
+    padding: px;
+  }
+  
+  .grid {
+    padding: 3vh;
+  }
+  
+  @media only screen and (max-width: 415px) {
+    body {
+      background-color: #cf5ea4;
+    }
+    .mcqstyle {
+      background-color: #1d2671;
+      border-radius: 1.5vh;
+      box-shadow: #2a2a2a 1px 1px 12px;
+    }
+  
+    .cardpostion {
+      padding: 3vh;
+    }
+    .textstyleheader {
+      color: #c33764;
+    }
+    .buttonstyle {
+      padding: 10px;
+      background: #c33764;
+      border: 0px;
+      border-radius: 5px;
+      width: 30vh;
+      text-align: left;
+      color: white;
+    }
+  
+    .buttonstyle:hover {
+      color: #c33764;
+      background: white;
+    }
+    .buttongroup {
+      padding: px;
+    }
+  }
+  
