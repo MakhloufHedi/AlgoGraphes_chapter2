@@ -33,6 +33,7 @@ import Concept7 from './Components/Chapters/Chapter1/concept7';
 import Concept8 from './Components/Chapters/Chapter1/concept8';
 import Concept9 from './Components/Chapters/Chapter1/concept9';
 import Concept10 from './Components/Chapters/Chapter1/concept10';
+import CROSSWORDS from './Components/Chapters/Chapter1/crosswords';
 
 import Concept21 from './Components/Chapters/Chapter2/concept21';
 import Concept22 from './Components/Chapters/Chapter2/concept22';
@@ -93,7 +94,13 @@ function App() {
         <Route path="/chapter1/qcm8" element={<QCM8 />} />
         <Route path="/chapter1/qcm9" element={<QCM9 />} />
         <Route path="/chapter1/qcm10" element={<QCM10 />} />
+
+        <Route path="/Chapter1/crosswords" element={<CROSSWORDS />} />
+
         <Route path="/Chapters" element={<Chapters />} />
+        
+        
+        
         <Route path="/chapter2/concept21" element={<Concept21 />} />
         <Route path="/chapter2/about21" element={<QCM21 />} />
 
