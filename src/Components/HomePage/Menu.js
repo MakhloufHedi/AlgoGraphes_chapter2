@@ -35,7 +35,7 @@ class Menu extends Component {
                         </Col>
 
                         <Col xs="4">
-                        <nav><Link to="/Chapters"><div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}   > Start Game </Button></div> </Link></nav> <br />
+                        <nav><Link to="/Chapters"><div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px", textDecoration:"none" }} > Start Game </Button></div> </Link></nav> <br />
                             <div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}  > Playground </Button></div>  <br />
                             <nav><Link to="/Scoreboard"><div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px" }}  > Scoreboard </Button></div></Link></nav>  <br />
                             <nav><Link to="/Profile"><div className="d-grid gap-2"><Button style={{ "background": "#6FA6E6", "font-family": "Comic Sans MS", height: "50px", width: "350px", underline: "none" }} > Profile </Button></div></Link></nav>  <br />

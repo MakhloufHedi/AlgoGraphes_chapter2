@@ -6,6 +6,8 @@ import Login from './Login.js';
 import { Route, Routes, Navigate, Link, withRouter } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Test from './Test';
+import Signup from './Signup';
+
 import QCM from './Components/Chapters/Chapter1/Qcm.js';
 import QCM2 from './Components/Chapters/Chapter1/QCM2.js';
 import QCM3 from './Components/Chapters/Chapter1/QCM3.js';
@@ -52,6 +54,7 @@ import QCM28 from './Components/Chapters/Chapter2/qcm28';
 import QCM29 from './Components/Chapters/Chapter2/qcm29';
 import QCM210 from './Components/Chapters/Chapter2/qcm210';
 
+
 function App() {
   return (
     // <Router>
@@ -71,6 +74,7 @@ function App() {
       <p style={{ fontSize: "10px" }}>User discretion advised</p>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/Scoreboard" element={<Scoreboardd />} />
         <Route path="/Profile" element={<Profile />} />

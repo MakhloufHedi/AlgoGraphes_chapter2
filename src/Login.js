@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Login.css';
 import axios from 'axios';
 import jwtDecode from 'jwt-decode';
-import { Redirect ,Switch , Router , Navigate } from 'react-router';
 // import NavBar from './NavBar';
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 
 class Login extends Component {
 
@@ -95,7 +95,8 @@ class Login extends Component {
                                 <input type="checkbox" value="remember-me" /> Remember me
                             </label>
                         </div> */}
-                        <button type="submit" className="btn btn-lg btn-primary btn-block btn-signin" >Login</button>
+                        <button type="submit" className="btn btn-lg btn-primary btn-block btn-signin" >Login</button> 
+                        <nav ><Link to="/signup"><button className="btn btn-lg btn-primary btn-block btn-signin" onclick>Signup</button></Link> </nav >
                     </form>
                     {/* <a href="#" className="forgot-password">
                         Forgot the password?
