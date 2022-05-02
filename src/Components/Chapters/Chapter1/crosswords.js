@@ -14,25 +14,25 @@ import {
 const data = {
     across: {
         1: {
-            clue: "abbreviated programming language",
+            clue: "un sommet dont la suppression augmente le nombre des composantes connexte est nommée point d' ",
             answer: "articulation",
             row: 3,
             col: 0
         },
         2: {
-            clue: "JS library for building UIs",
+            clue: "La somme du nombre des precedents et suivants d'un sommet",
             answer: "degre",
             row: 6,
             col: 7
         },
         3: {
-            clue: "JS library for building UIs",
+            clue: "un sommet qui augmente la degré sortante d'un autre sommet",
             answer: "suivant",
             row: 8,
             col: 3
         },
         4: {
-            clue: "DOM bindings for React Router",
+            clue: "un sommet qui augmente la degré entrante d'un autre sommet",
             answer: "precedant",
             row: 10,
             col: 5
@@ -58,13 +58,13 @@ const data = {
             col: 11
         },
         8: {
-            clue: "enable config override",
+            clue: "matrice qui décrit le voisinage entre deux sommets",
             answer: "adjacence",
             row: 5,
             col: 7
         },
         9: {
-            clue: "crossword creator",
+            clue: "un graphe dans lequel si l'arc (i,j) existe (j,i) existe aussi",
             answer: "symetrique",
             row: 6,
             col: 13
@@ -77,15 +77,13 @@ class crosswords extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          "rSelected": "",
-          "setRSelected": "",
-          "response": "",
+          "correcte": false,
         };
         this.correct = this.correct.bind(this);
       }
     correct(){
+        if(this.state.correcte)
         alert("félications");
-        document.write("félicitations")
     }
     render() {
         return (
@@ -94,7 +92,8 @@ class crosswords extends Component {
                     <Row>
                         <Col xs="8">
                             <CardText style={{   "marginLeft":"400px", color:"black" }}>
-                                <Crossword data={data} onCrosswordCorrect={this.correct}  />
+                                <Crossword data={data} onCrosswordCorrect={this.correct} />
+                                
                             </CardText>
                         </Col>
                     </Row>
