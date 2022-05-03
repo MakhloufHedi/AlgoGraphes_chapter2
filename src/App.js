@@ -54,6 +54,14 @@ import QCM28 from './Components/Chapters/Chapter2/qcm28';
 import QCM29 from './Components/Chapters/Chapter2/qcm29';
 import QCM210 from './Components/Chapters/Chapter2/qcm210';
 
+import Concept3_1 from './Components/Chapters/Chapter3/Concept3_1';
+import Concept3_2 from './Components/Chapters/Chapter3/Concept3_2';
+import Concept3_3 from './Components/Chapters/Chapter3/Concept3_3';
+import Concept3_4 from './Components/Chapters/Chapter3/Concept3_4';
+import Qcm3_1 from './Components/Chapters/Chapter3/Qcm3_1';
+import Qcm3_2 from './Components/Chapters/Chapter3/Qcm3_2';
+import Qcm3_3 from './Components/Chapters/Chapter3/Qcm3_3';
+import Qcm3_4 from './Components/Chapters/Chapter3/Qcm3_4';
 
 function App() {
   return (
@@ -121,6 +129,15 @@ function App() {
         <Route path="/chapter2/concept29" element={<Concept29 />} />
         <Route path="/chapter2/about29" element={<QCM29 />} />
         <Route path="/chapter2/about210" element={<QCM210 />} />
+
+        <Route path="/Concept3_1" element={<Concept3_1 />} />
+        <Route path="/Concept3_2" element={<Concept3_2 />} />
+        <Route path="/Concept3_3" element={<Concept3_3 />} />
+        <Route path="/Concept3_4" element={<Concept3_4 />} />
+        <Route path="/Qcm3_1" element={<Qcm3_1 />} />
+        <Route path="/Qcm3_2" element={<Qcm3_2 />} />
+        <Route path="/Qcm3_3" element={<Qcm3_3 />} />
+        <Route path="/Qcm3_4" element={<Qcm3_4 />} />
       </Routes>
     </div>
   );

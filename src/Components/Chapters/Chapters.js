@@ -67,7 +67,7 @@ class Chapters extends Component {
 
                         <nav ><Link to="/chapter1/Concept"><img className="profile-img-card" src={chap1} style={{ position: "center", marginBottom: "20px", width: "250px", height: "250px" }} /></Link></nav>  <br />
                         <nav ><Link to="/chapter2/Concept21"><img  className="profile-img-card" src={chap2} style={{ position: "center", marginBottom: "20px", width: "250px", height: "250px" }} /></Link></nav>  <br />
-                        <nav ><Link to="/Scoreboard"><img  className="profile-img-card" src={chap3} style={{ position: "center", width: "250px", height: "250px" }} /></Link></nav>  <br />
+                        <nav ><Link to="/Concept3_1"><img  className="profile-img-card" src={chap3} style={{ position: "center", width: "250px", height: "250px" }} /></Link></nav>  <br />  <br />
                         <nav ><Link to="/Scoreboard"><img  className="profile-img-card" src={chap4} style={{ position: "center", marginBottom: "20px ", width: "250px", height: "250px" }} /></Link></nav>  <br />
 
                     </Row>
