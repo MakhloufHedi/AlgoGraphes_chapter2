@@ -9,7 +9,7 @@ class Concept3_1 extends Component {
 
   render() {
     return (
-      <div className="App" >
+      <div>
 
         <Card body inverse /*color="success"*/ style={{ position: "center", width: "1200px", "background": "#2F8DD6" }}>
           <CardTitle style={{ "font-size": "50px", "font-family": "Times New Roman" }}>chapitre 3: Arbres à poids minimum</CardTitle>

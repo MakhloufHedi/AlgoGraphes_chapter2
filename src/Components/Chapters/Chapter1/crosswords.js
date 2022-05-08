@@ -38,7 +38,7 @@ const data = {
             col: 5
         },
         5: {
-            clue: "Un arc dont la supression augmente le nombre des comosantes connexes",
+            clue: "Une matrice qui représente la relation entre les sommets et les arcs",
             answer: "incidence",
             row: 12,
             col: 0
@@ -81,8 +81,8 @@ class crosswords extends Component {
         };
         this.correct = this.correct.bind(this);
       }
-    correct(){
-        if(this.state.correcte)
+    correct(e){
+        e.preventDefault();
         alert("félications");
     }
     render() {
