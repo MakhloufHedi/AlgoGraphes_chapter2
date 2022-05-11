@@ -40,20 +40,26 @@ class Chapters extends Component {
     }
     
   updatescore(id) {
-    axios({
-      method: 'patch',
-      url: `http://localhost:8000/api/users/${id}`,
-      data: {
-        "score": this.state.sc
-      },
-      headers: {
-        "Content-Type": 'application/merge-patch+json'
-      }
-    }).then(res =>{
-      alert("score modifié")
-    }).catch(err => {
-      alert("Failed operation")
-    })
+    console.log(localStorage.getItem('sc'))
+    // axios({
+    //   method: 'patch',
+    //   url: `http://localhost:8000/api/users/${id}`,
+    //   data: {
+    //     "score": localStorage.getItem('sc')
+    //   },
+    //   headers: {
+    //     "Content-Type": 'application/merge-patch+json'
+    //   }
+    // }).then(res =>{
+    //   alert("score modifié")
+    // }).catch(err => {
+    //   alert("Failed operation")
+    // })
+    axios.put(`http://localhost:8000/api/users/${id}`, {
+
+      "score": parseFloat(localStorage.getItem('sc'))
+
+  })
   }
 
     render() {

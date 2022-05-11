@@ -18,7 +18,7 @@ class Scoreboardd extends Component {
       currentPage: 0,
     };
     this.handlePageClick = this.handlePageClick.bind(this);
-
+    this.sortFunction = this.sortFunction.bind(this)
   }
 
   componentDidMount() {
@@ -28,7 +28,9 @@ class Scoreboardd extends Component {
 
   getScores() {
     axios.get(`http://localhost:8000/api/info`).then(response => {
-      this.setState({ Scores: response.data.data })
+    let a = response.data.data;
+    a.sort(this.sortFunction);  
+    this.setState({ Scores: a })
       // var tdata = response.data['hydra:member'];
       // var slice = tdata.slice(this.state.offset, this.state.offset + this.state.perPage)
       // this.setState({
@@ -63,7 +65,14 @@ class Scoreboardd extends Component {
     })
 
   }
-
+   sortFunction(a, b) {
+    if (a[0] === b[0]) {
+        return 0;
+    }
+    else {
+        return (a[0] < b[0]) ? -1 : 1;
+    }
+}
   render() {
 
 
