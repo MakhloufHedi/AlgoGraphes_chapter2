@@ -21,7 +21,7 @@ import QCM10 from './Components/Chapters/Chapter1/QCM10.js';
 
 import Concept from './Components/Chapters/Chapter1/concept';
 import Scoreboard from './Components/Scoreboard/Scoreboard';
-import { Table } from 'reactstrap'
+import { Modal,Table } from 'reactstrap'
 import Scoreboardd from './Components/Scoreboard/Scoreboard2';
 import Menu from './Components/HomePage/Menu';
 import Profile from './Components/Profile/Profile';
@@ -53,6 +53,8 @@ import QCM27 from './Components/Chapters/Chapter2/qcm27';
 import QCM28 from './Components/Chapters/Chapter2/qcm28';
 import QCM29 from './Components/Chapters/Chapter2/qcm29';
 import QCM210 from './Components/Chapters/Chapter2/qcm210';
+
+import Game2 from './game2/Game2'
 
 import Concept3_1 from './Components/Chapters/Chapter3/Concept3_1';
 import Concept3_2 from './Components/Chapters/Chapter3/Concept3_2';
@@ -130,6 +132,8 @@ function App() {
         <Route path="/chapter2/concept29" element={<Concept29 />} />
         <Route path="/chapter2/about29" element={<QCM29 />} />
         <Route path="/chapter2/about210" element={<QCM210 />} />
+
+        <Route path="/game2/Game2" element={<Game2 />} />
 
         <Route path="/Concept3_1" element={<Concept3_1 />} />
         <Route path="/Concept3_2" element={<Concept3_2 />} />
