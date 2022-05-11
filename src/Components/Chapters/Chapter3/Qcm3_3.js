@@ -39,7 +39,7 @@ class Qcm3_3 extends Component {
 
     return (
 
-      <div className="grid">
+      <div className="grid" style={{width:"1200px"}}>
         <Card className="cardpostion mcqstyle">
           <CardBody>
             <CardTitle className="textstyleheader">

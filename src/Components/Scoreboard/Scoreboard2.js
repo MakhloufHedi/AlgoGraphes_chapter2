@@ -68,7 +68,7 @@ class Scoreboardd extends Component {
 
 
     return (
-      <Table dark>
+      <Table dark style={{width:"1200px",marginTop:"-400px"}}>
         <thead>
           <tr>
             <th>

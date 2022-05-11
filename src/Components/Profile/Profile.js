@@ -52,7 +52,7 @@ class Profile extends Component {
 
     render() {
         return (
-            <div class="container" style={{marginTop:70}}>
+            <div class="container" style={{marginTop:70, width:"1200px"}}>
                 <div class="main-body">
                     <div class="row gutters-sm">
                         <div class="col-md-4 mb-3">
